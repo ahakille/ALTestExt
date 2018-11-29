@@ -11,9 +11,9 @@ tableextension 50100 ResourceExt extends Resource
         }
         modify(Type)
         {
-            OptionCaption ='Instrutor,Room';
+            OptionCaption = 'Instrutor,Room';
         }
-        
+
         field(50101; "CSD Resource Type"; Option)
         {
             OptionMembers = "Internal","External";
