@@ -8,13 +8,9 @@ table 50132 "CSD Seminar Ledger Entry"
 
     fields
     {
-        field(1; "Entry No."; Code[10])
+        field(1; "Entry No."; Integer)
         {
             Caption = 'Entry No.';
-        }
-        field(2; "Line No."; Integer)
-        {
-            Caption = 'Line No.';
         }
         field(3; "Seminar No."; Code[20])
         {
@@ -159,7 +155,7 @@ table 50132 "CSD Seminar Ledger Entry"
 
     keys
     {
-        key(Key1; "Entry No.", "Journal Batch Name", "Line No.")
+        key(Key1; "Entry No.", "Journal Batch Name")
         {
         }
     }
