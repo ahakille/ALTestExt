@@ -4,6 +4,7 @@ page 50110 "CSD Seminar Registration"
     PageType = Document;
     SourceTable = "CSD Seminar Reg. Header";
 
+
     layout
     {
         area(content)
