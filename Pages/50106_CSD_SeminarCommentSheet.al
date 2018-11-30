@@ -24,4 +24,8 @@ page 50106 "CSD Seminar Comment Sheet"
             }
         }
     }
+    trigger OnNewRecord(BelowxRec: Boolean)
+    begin
+        SetupNewLine();
+    end;
 }
