@@ -136,8 +136,26 @@ page 50134 "CSD Posted Seminar Reg."
                     RunObject = Page "CSD Posted Seminar Charges";
                     RunPageLink = "Document No." = Field ("No.");
                 }
+
             }
         }
+        area(Processing)
+        {
+            action("&Navigate")
+            {
+                Caption = '&Navigate';
+                Image = Navigate;
+                Promoted = true;
+                PromotedCategory = Process;
+                trigger OnAction();
+                var
+                    Navigate: page Navigate;
+                begin
+                    Navigate.SetDoc("Posting Date", "No.");
+                    Navigate.RUN;
+                end;
+            }
+        }
+
     }
 }
-

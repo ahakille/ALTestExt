@@ -149,6 +149,11 @@ table 50118 "CSD Posted Seminar Reg. Header"
             Caption = 'Source Code';
             TableRelation = "Source Code";
         }
+        field(40; "No. Printed"; Integer)
+        {
+            Caption = 'No. Printed';
+            Editable = false;
+        }
     }
 
     keys
